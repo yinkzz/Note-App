@@ -1,9 +1,8 @@
 const express = require('express')
 const app = express()
 const cors = require('cors/lib')
-
 app.use(cors())
-
+app.use(express.static('build'))
 
 let notes = [
   {
